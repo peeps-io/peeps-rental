@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence, easeInOut } from "framer-motion";
-import { Menu, X, ArrowRight, Zap, Search } from "lucide-react";
+import { Menu, X, ArrowRight, Search } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,7 +17,7 @@ const navItems: NavItem[] = [
   { name: "Pricing", href: "#pricing" },
   { name: "Asked Questions", href: "#faq" },
   { name: "Take action Now", href: "#cta" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "/support" },
 ];
 
 export default function Navbar() {
@@ -102,7 +102,12 @@ export default function Navbar() {
               >
                 <div className="relative">
                   <div className="w-9 h-9 relative">
-                    <Image fill src={"/logo.png"} alt="logo" className="rounded-lg" />
+                    <Image
+                      fill
+                      src={"/logo.png"}
+                      alt="logo"
+                      className="rounded-lg"
+                    />
                   </div>
 
                   <div className="absolute -top-1 -right-1 h-3 w-3 animate-pulse rounded-full bg-purple-400"></div>
@@ -242,15 +247,7 @@ export default function Navbar() {
                 >
                   <Link
                     prefetch={false}
-                    href="/login"
-                    className="text-foreground hover:bg-muted block w-full rounded-lg py-3 text-center font-medium transition-colors duration-200"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Sign In
-                  </Link>
-                  <Link
-                    prefetch={false}
-                    href="/signup"
+                    href="/https://peeps-rental-manager-client.onrender.com/login"
                     className="bg-foreground text-background hover:bg-foreground/90 block w-full rounded-lg py-3 text-center font-medium transition-all duration-200"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

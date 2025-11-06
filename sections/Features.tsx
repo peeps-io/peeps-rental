@@ -1,46 +1,46 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { cn } from '@/lib/utils';
-import { Rocket, Code, Paintbrush } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "@/lib/utils";
+import { Rocket, NotebookPen, Blocks, MonitorCog } from "lucide-react";
 
 const features = [
   {
-    step: 'Step 1',
-    title: 'Build Faster',
+    step: "Step 1",
+    title: "Automated Rent Collection and Robust Financial Tracking",
     content:
-      'Create your MVP in record time with our pre-built blocks and components.',
+      "Streamline your finances with secure online payments, automated billing, and instant detailed financial reporting.",
     icon: <Rocket className="text-primary h-6 w-6" />,
     image:
-      'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=2070&auto=format&fit=crop',
+      "https://images.unsplash.com/photo-1724482606633-fa74fe4f5de1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070",
   },
   {
-    step: 'Step 2',
-    title: 'Customize Easily',
+    step: "Step 2",
+    title: "Centralized Maintenance and Asset Operations",
     content:
-      'Tailor every component to your needs with our intuitive design system and flexible architecture.',
-    icon: <Paintbrush className="text-primary h-6 w-6" />,
+      "Move from reactive to proactive maintenance using a centralized tenant request portal, efficient work order assignment, and preventive scheduling tools..",
+    icon: <Blocks className="text-primary h-6 w-6" />,
     image:
-      'https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=2070&auto=format&fit=crop',
+      "https://images.unsplash.com/photo-1729838809728-48566c1ef0e9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
   },
   {
-    step: 'Step 3',
-    title: 'Deploy Confidently',
+    step: "Step 3",
+    title: "Complete Tenant and Lease Lifecycle Management",
     content:
-      'Launch your product with confidence using our optimized, responsive, and accessible components.',
-    icon: <Code className="text-primary h-6 w-6" />,
+      "Keep track of complex lease terms and documents while using centralized communication to improve tenant relationships and retention.",
+    icon: <NotebookPen className="text-primary h-6 w-6" />,
     image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
+      "https://plus.unsplash.com/premium_photo-1661755100242-618b5a580db9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332",
   },
   {
-    step: 'Step 4',
-    title: 'Add Yours!',
+    step: "Step 4",
+    title: "Portfolio Management on the Go",
     content:
-      'Contribute your own blocks and become part of the MVPBlocks community.',
-    icon: <Code className="text-primary h-6 w-6" />,
+      "Manage your entire portfolio, from tenant data to work orders, with a mobile-friendly design that provides timely updates and seamless field operations support from any location.",
+    icon: <MonitorCog className="text-primary h-6 w-6" />,
     image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
   },
 ];
 
@@ -62,23 +62,23 @@ export default function Features() {
   }, [progress]);
 
   return (
-    <div id={"features"}  className={'p-8 md:p-12'}>
+    <div id={"features"} className={"p-8 md:p-12"}>
       <div className="mx-auto w-full max-w-7xl">
         <div className="relative mx-auto mb-12 max-w-2xl sm:text-center">
           <div className="relative z-10">
             <h2 className="font-geist text-3xl font-bold tracking-tighter md:text-4xl lg:text-5xl">
-              Build Your MVP in Three Steps
+              Manage Properties and Tenants in Four easy steps
             </h2>
             <p className="font-geist text-foreground/60 mt-3">
-              MVPBlocks helps you create, customize, and deploy your product
-              faster than ever before.
+              Simplify everything from screening to rent collection. Master our
+              proven four-step formula for hassle-free property management.
             </p>
           </div>
           <div
             className="absolute inset-0 mx-auto h-44 max-w-xs blur-[118px]"
             style={{
               background:
-                'linear-gradient(152.92deg, rgba(192, 15, 102, 0.2) 4.54%, rgba(192, 11, 109, 0.26) 34.2%, rgba(192, 15, 102, 0.1) 77.55%)',
+                "linear-gradient(152.92deg, rgba(192, 15, 102, 0.2) 4.54%, rgba(192, 11, 109, 0.26) 34.2%, rgba(192, 15, 102, 0.1) 77.55%)",
             }}
           ></div>
         </div>
@@ -100,10 +100,10 @@ export default function Features() {
               >
                 <motion.div
                   className={cn(
-                    'flex h-12 w-12 items-center justify-center rounded-full border-2 md:h-14 md:w-14',
+                    "flex h-12 w-12 items-center justify-center rounded-full border-2 md:h-14 md:w-14",
                     index === currentFeature
-                      ? 'border-primary bg-primary/10 text-primary scale-110 [box-shadow:0_0_15px_rgba(192,15,102,0.3)]'
-                      : 'border-muted-foreground bg-muted',
+                      ? "border-primary bg-primary/10 text-primary scale-110 [box-shadow:0_0_15px_rgba(192,15,102,0.3)]"
+                      : "border-muted-foreground bg-muted"
                   )}
                 >
                   {feature.icon}
@@ -123,7 +123,7 @@ export default function Features() {
 
           <div
             className={cn(
-              'border-primary/20 relative order-1 h-[200px] overflow-hidden rounded-xl border [box-shadow:0_5px_30px_-15px_rgba(192,15,102,0.3)] md:order-2 md:h-[300px] lg:h-[400px]',
+              "border-primary/20 relative order-1 h-[200px] overflow-hidden rounded-xl border [box-shadow:0_5px_30px_-15px_rgba(192,15,102,0.3)] md:order-2 md:h-[300px] lg:h-[400px]"
             )}
           >
             <AnimatePresence mode="wait">
@@ -136,7 +136,7 @@ export default function Features() {
                       initial={{ y: 100, opacity: 0, rotateX: -20 }}
                       animate={{ y: 0, opacity: 1, rotateX: 0 }}
                       exit={{ y: -100, opacity: 0, rotateX: 20 }}
-                      transition={{ duration: 0.5, ease: 'easeInOut' }}
+                      transition={{ duration: 0.5, ease: "easeInOut" }}
                     >
                       <img
                         src={feature.image}
@@ -153,7 +153,7 @@ export default function Features() {
                         </span>
                       </div>
                     </motion.div>
-                  ),
+                  )
               )}
             </AnimatePresence>
           </div>

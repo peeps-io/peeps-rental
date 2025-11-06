@@ -16,58 +16,94 @@ interface FaqItem {
 const faqItems: FaqItem[] = [
   {
     id: "1",
-    question: "What is MVPBlocks?",
+    question: "What is Peeps Rental Manager?",
     answer:
-      "MVPBlocks is a collection of ready-to-use UI components built with Next.js and Tailwind CSS. It helps developers quickly build beautiful, responsive websites without starting from scratch.",
-    category: "general",
+      "The Peeps Rental Manager Client is a Property Management Software (PMS) designed to help users efficiently manage residential property portfolios.",
+    category: "pricing",
   },
   {
     id: "2",
-    question: "Is MVPBlocks free to use?",
+    question:
+      "What financial reports are available for property owners and tax purposes?",
     answer:
-      "Yes, MVPBlocks is completely free and open-source. You can use it for personal and commercial projects without any restrictions or attribution requirements.",
+      "The software includes built-in financial data tracking and customized reports essential for oversight. You can generate detailed reports such as the Rent Roll, Vacancy/Occupancy reports, and categorized Income/Expense statements.[1, 2]",
     category: "general",
   },
   {
     id: "3",
-    question: "Do I need to know Tailwind CSS to use MVPBlocks?",
+    question: "How are maintenance requests and work orders managed?",
     answer:
-      "While having Tailwind CSS knowledge is helpful, it's not required. You can simply copy and paste our components into your project and make basic modifications without deep Tailwind expertise.",
-    category: "technical",
+      "The system features a centralized portal where tenants can submit maintenance requests. Managers can efficiently assign work orders to internal staff or external vendors, track associated costs, and monitor the repair history of the property.[3, 4, 5]",
+    category: "support",
   },
   {
     id: "4",
-    question: "How do I install MVPBlocks?",
+    question:
+      "Is the platform mobile-friendly for property managers working remotely?",
     answer:
-      "You don't need to install MVPBlocks as a package. Simply browse our component library, find the components you need, and copy the code into your project. Make sure you have the required dependencies installed.",
+      "Yes, the property management system features mobile accessibility and a responsive design. This provides easy access from anywhere, empowering teams to monitor multiple properties, manage maintenance, and stay connected while in the field.[4, 5]",
     category: "technical",
   },
   {
     id: "5",
-    question: "Can I customize the components?",
+    question:
+      "Does the software support required accounting compliance features like Trust Accounting?",
     answer:
-      "Absolutely! All components are built with customization in mind. You can modify colors, spacing, typography, and more using Tailwind classes or by editing the component code directly.",
-    category: "technical",
+      "For professional use, the software includes critical compliance features such as Trust Accounting support, a robust transaction audit history, and integrated document management to ensure proper handling of fiduciary funds and legal adherence.[1, 2]",
+    category: "general",
   },
   {
     id: "6",
-    question: "Do MVPBlocks components work with dark mode?",
+    question:
+      "Can I integrate my financial data with external accounting software?",
     answer:
-      "Yes, all MVPBlocks components are designed to work seamlessly with both light and dark modes. They automatically adapt to your site's theme settings.",
+      "To simplify comprehensive financial reporting and tax preparation, the platform offers strong integration capabilities. This typically includes features to easily export data or directly synchronize operations with popular accounting software outlets like QuickBooks.",
     category: "technical",
   },
   {
     id: "7",
-    question: "How often are new components added?",
+    question: "Does the system help with tenant screening and lease tracking?",
     answer:
-      "We regularly add new components to the library. Our goal is to provide a comprehensive set of components for all common UI patterns and website sections.",
+      "Yes, the system is designed to manage the tenant lifecycle, which includes tracking complex lease agreements, monitoring lease expiration dates, and supporting integrations with service providers for essential functions like tenant screening and insurance verification.[3, 1, 2]",
     category: "general",
   },
   {
     id: "8",
-    question: "How can I contribute to MVPBlocks?",
+    question:
+      "How does the platform help improve tenant retention and satisfaction?",
     answer:
-      "We welcome contributions! You can contribute by creating new components, improving existing ones, fixing bugs, or enhancing documentation. Check our GitHub repository for contribution guidelines.",
+      "The software improves tenant satisfaction through centralized communication tools, timely notification systems, and speeding up response times for maintenance requests, which strengthens the tenant-manager relationship and retention rates.[3, 4, 5, 2]",
+    category: "support",
+  },
+  {
+    id: "9",
+    question: "What security measures protect sensitive tenant and owner data?",
+    answer:
+      "The system is built on strong security foundations, which include features like two-factor authentication (2FA) and comprehensive, time-stamped audit trails to protect sensitive tenant and owner records, ensuring compliance and building trust.[4, 5, 2]",
+    category: "technical",
+  },
+  {
+    id: "10",
+    question:
+      "What level of automation is provided for daily repetitive tasks?",
+    answer:
+      "Automation is key to scaling, and the system automates repetitive tasks such as invoicing, late fee calculations, payment reminders, and follow-ups. This significantly reduces the administrative burden and labor costs associated with managing a large portfolio.[5]",
+    category: "general",
+  },
+  {
+    id: "11",
+    question:
+      "Can I generate customized statements and ROI reports for property owners?",
+    answer:
+      "Yes, the platform allows you to generate detailed and customized financial summaries for property owners. These reports include key performance indicators (KPIs) such as occupancy rates, detailed expenses, and Return on Investment (ROI) to improve investor confidence and transparency.[5, 2]",
+    category: "general",
+  },
+  {
+    id: "12",
+    question:
+      "Is the software easy to learn, and what kind of support is offered?",
+    answer:
+      "The software features an intuitive and easy-to-learn user interface designed for quick adoption. Furthermore, strong customer service, often including live chat support, is essential for rapid issue resolution and overall customer satisfaction.",
     category: "support",
   },
 ];
@@ -109,8 +145,8 @@ export default function Faq() {
           </h2>
 
           <p className="text-muted-foreground max-w-2xl text-center">
-            Find answers to common questions about MVPBlocks and how to use our
-            components to build your next project.
+            Find answers to common questions about Peeps Rental and how to use
+            our Services.
           </p>
         </div>
 
@@ -195,7 +231,7 @@ export default function Faq() {
             Can&apos;t find what you&apos;re looking for?
           </p>
           <a
-            href="#"
+            href="/support"
             className="border-primary text-foreground hover:bg-primary hover:text-primary-foreground inline-flex items-center justify-center rounded-lg border-2 px-6 py-3 font-medium transition-colors"
           >
             Contact Support
