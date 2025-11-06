@@ -109,8 +109,6 @@ export default function Navbar() {
                       className="rounded-lg"
                     />
                   </div>
-
-                  <div className="absolute -top-1 -right-1 h-3 w-3 animate-pulse rounded-full bg-purple-400"></div>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-foreground text-lg font-bold">
@@ -169,21 +167,13 @@ export default function Navbar() {
                 <Search className="h-5 w-5" />
               </motion.button>
 
-              <Link
-                prefetch={false}
-                href="/login"
-                className="text-foreground/80 hover:text-foreground px-4 py-2 text-sm font-medium transition-colors duration-200"
-              >
-                Sign In
-              </Link>
-
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <Link
                   prefetch={false}
-                  href="/signup"
+                  href="https://peeps-rental-manager-client.onrender.com/login"
                   className="bg-purple-600 text-white hover:bg-purple-700 inline-flex items-center space-x-2 rounded-lg px-5 py-2.5 text-sm font-medium shadow-sm transition-all duration-200"
                 >
                   <span>Get Started</span>
@@ -247,7 +237,7 @@ export default function Navbar() {
                 >
                   <Link
                     prefetch={false}
-                    href="/https://peeps-rental-manager-client.onrender.com/login"
+                    href="https://peeps-rental-manager-client.onrender.com/login"
                     className="bg-foreground text-background hover:bg-foreground/90 block w-full rounded-lg py-3 text-center font-medium transition-all duration-200"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
