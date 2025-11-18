@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "Peeps Rental Manager",
     images: [
       {
-        url: "/og-image.jpg", // Path to your 1200x630px social share image
+        url: "/og-image.png", // Path to your 1200x630px social share image
         width: 1200,
         height: 630,
         alt: "Peeps Rental Manager Dashboard Screenshot",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     description:
       "Automate rent, manage maintenance, and keep your property finances clear with Peeps Rental Manager.",
     // image: "/twitter-image.jpg", // Optional: 1:1 image for Twitter specifically
-    creator: "@YourTwitterHandle", // Optional: Your company's Twitter handle
+    creator: "@peepsrental_hq", // Optional: Your company's Twitter handle
   },
 
   // ------------------------------------
